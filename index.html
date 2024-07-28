@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"/>
+		 <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <div class="sidebar">
+		<b>My profile</b>
+        <div class="profile">
+				
+            <div class="profile-pic"><i class="fa-solid fa-user"></i></div>
+						<div class="info">
+            <p>Name: Asmer Chougle</p>
+            <p>Email-Id: en21115156@git-india.edu.in</p>
+            <p>Group No.: 1B</p>
+						</div>
+        </div>
+				
+        <nav>
+            <ul>
+                <li><i class="fa-solid fa-users"></i><a href="#">PARTICIPANTS</a></li>
+                <li><i class="fa-solid fa-house"></i><a href="#">DASHBOARD</a></li>
+                <li><i class="fa-solid fa-clipboard-list"></i><a href="#">PROPOSALS</a></li>
+                <li><i class="fa-solid fa-list-check"></i><a href="#">TASKS</a></li>
+                <li><i class="fa-regular fa-bell"></i><a href="#">NOTIFICATIONS</a></li>
+                <li><i class="fa-solid fa-layer-group"></i><a href="#">REPOSITORIES</a></li>
+                <li><i class="fa-solid fa-arrow-right-from-bracket"></i><a href="#">LOGOUT</a></li>
+            </ul>
+        </nav>
+    </div>
+    <div class="main-content">
+        <h1>DASHBOARD</h1>
+        <div class="info-cards">
+            <div class="card blue">
+						
+                <h2><i class="fa-solid fa-users"></i>PARTICIPANTS</h2>
+                <p>5</p>
+            </div>
+            <div class="card red">
+						
+                <h2><i class="fa-regular fa-bell"></i>NOTIFICATIONS</h2>
+                <p>25</p>
+            </div>
+            <div class="card yellow">
+                <h2><i class="fa-solid fa-layer-group"></i>REPOSITORIES</h2>
+                <p>21</p>
+            </div>
+            <div class="card green">
+                <h2><i class="fa-solid fa-list-check"></i><br>TASKS</h2>
+                <p>11</p>
+            </div>
+        </div>
+        <div class="progress-cards">
+            <div class="progress-card">
+                <h2>Progress</h2>
+                <div id="progress-chart"></div>
+            </div>
+            <div class="progress-card">
+                <h2>Approved Progress</h2>
+                <div id="approved-progress-chart"></div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
